@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'pathfinder_open_in_macvim' target in the 'pathfinder_open_in_macvim' project.
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
