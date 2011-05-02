@@ -1,21 +1,21 @@
 //
-//  OpenInTextMate.m
-//  pathfinder_open_in_textmate
+//  OpenInBBEdit.m
+//  pathfinder_open_in_bbedit
 //
 //  Created by orta therox on 06/09/2010.
 //  Copyright 2010 wgrids. All rights reserved.
 //
 
-#import "OpenInTextMate.h"
+#import "OpenInBBEdit.h"
 
 
-@implementation OpenInTextMate
+@implementation OpenInBBEdit
 
 @synthesize host;
 
 + (id)plugin:(id<NTPathFinderPluginHostProtocol>)pathfinder_host;
 {
-  OpenInTextMate* result = [[self alloc] init];
+  OpenInBBEdit* result = [[self alloc] init];
   result.host = pathfinder_host;
   
   return [result autorelease];
@@ -30,7 +30,7 @@
 {
   NSMenuItem* menuItem;
 	
-  menuItem = [[[NSMenuItem alloc] initWithTitle:@"Open in Textmate" action:@selector(pluginAction:) keyEquivalent:@"t"] autorelease];
+  menuItem = [[[NSMenuItem alloc] initWithTitle:@"Open in BBEdit" action:@selector(pluginAction:) keyEquivalent:@"b"] autorelease];
   [menuItem setTarget:self];
 	[menuItem setKeyEquivalentModifierMask: NSControlKeyMask | NSCommandKeyMask];
   return menuItem;
@@ -71,7 +71,7 @@
     // only allowing one file to be worked on at once but it's good enough for
     // the minute, and for me.
   
-  [[NSWorkspace sharedWorkspace] openFile: output withApplication:@"TextMate"];
+  [[NSWorkspace sharedWorkspace] openFile: output withApplication:@"BBEdit"];
     
   return nil;
 }

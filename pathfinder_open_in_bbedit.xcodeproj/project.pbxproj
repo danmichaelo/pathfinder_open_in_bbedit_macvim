@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		60C229021234D7B4004E0C70 /* OpenInTextMate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C229011234D7B4004E0C70 /* OpenInTextMate.m */; };
+		60C229021234D7B4004E0C70 /* OpenInBBEdit.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C229011234D7B4004E0C70 /* OpenInBBEdit.m */; };
 		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
 		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
@@ -17,10 +17,10 @@
 		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		32DBCF630370AF2F00C91783 /* pathfinder_open_in_textmate_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pathfinder_open_in_textmate_Prefix.pch; sourceTree = "<group>"; };
-		60C229001234D7B4004E0C70 /* OpenInTextMate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenInTextMate.h; sourceTree = "<group>"; };
-		60C229011234D7B4004E0C70 /* OpenInTextMate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenInTextMate.m; sourceTree = "<group>"; };
-		8D5B49B6048680CD000E48DA /* pathfinder_open_in_textmate.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pathfinder_open_in_textmate.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		32DBCF630370AF2F00C91783 /* pathfinder_open_in_bbedit_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pathfinder_open_in_bbedit_Prefix.pch; sourceTree = "<group>"; };
+		60C229001234D7B4004E0C70 /* OpenInBBEdit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenInBBEdit.h; sourceTree = "<group>"; };
+		60C229011234D7B4004E0C70 /* OpenInBBEdit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenInBBEdit.m; sourceTree = "<group>"; };
+		8D5B49B6048680CD000E48DA /* pathfinder_open_in_bbedit.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pathfinder_open_in_bbedit.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
@@ -70,8 +70,8 @@
 		08FB77AFFE84173DC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				60C229001234D7B4004E0C70 /* OpenInTextMate.h */,
-				60C229011234D7B4004E0C70 /* OpenInTextMate.m */,
+				60C229001234D7B4004E0C70 /* OpenInBBEdit.h */,
+				60C229011234D7B4004E0C70 /* OpenInBBEdit.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -97,7 +97,7 @@
 		19C28FB8FE9D52D311CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D5B49B6048680CD000E48DA /* pathfinder_open_in_textmate.plugin */,
+				8D5B49B6048680CD000E48DA /* pathfinder_open_in_bbedit.plugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,7 +105,7 @@
 		32C88E010371C26100C91783 /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				32DBCF630370AF2F00C91783 /* pathfinder_open_in_textmate_Prefix.pch */,
+				32DBCF630370AF2F00C91783 /* pathfinder_open_in_bbedit_Prefix.pch */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -113,9 +113,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8D5B49AC048680CD000E48DA /* pathfinder_open_in_textmate */ = {
+		8D5B49AC048680CD000E48DA /* pathfinder_open_in_bbedit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "pathfinder_open_in_textmate" */;
+			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "pathfinder_open_in_bbedit" */;
 			buildPhases = (
 				8D5B49AF048680CD000E48DA /* Resources */,
 				8D5B49B1048680CD000E48DA /* Sources */,
@@ -125,10 +125,10 @@
 			);
 			dependencies = (
 			);
-			name = pathfinder_open_in_textmate;
+			name = pathfinder_open_in_bbedit;
 			productInstallPath = "$(HOME)/Library/Bundles";
 			productName = pathfinder_open_in_textmate;
-			productReference = 8D5B49B6048680CD000E48DA /* pathfinder_open_in_textmate.plugin */;
+			productReference = 8D5B49B6048680CD000E48DA /* pathfinder_open_in_bbedit.plugin */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -136,14 +136,18 @@
 /* Begin PBXProject section */
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "pathfinder_open_in_textmate" */;
+			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "pathfinder_open_in_bbedit" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 089C166AFE841209C02AAC07 /* pathfinder_open_in_textmate */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D5B49AC048680CD000E48DA /* pathfinder_open_in_textmate */,
+				8D5B49AC048680CD000E48DA /* pathfinder_open_in_bbedit */,
 			);
 		};
 /* End PBXProject section */
@@ -164,7 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60C229021234D7B4004E0C70 /* OpenInTextMate.m in Sources */,
+				60C229021234D7B4004E0C70 /* OpenInBBEdit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,13 +196,13 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = pathfinder_open_in_textmate_Prefix.pch;
+				GCC_PREFIX_HEADER = pathfinder_open_in_bbedit_Prefix.pch;
 				HEADER_SEARCH_PATHS = (
-					"~/Downloads/Path\\ Finder\\ SDK//**",
+					"~/code/xcode/Path\\ Finder\\ SDK/**",
 				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
-				PRODUCT_NAME = pathfinder_open_in_textmate;
+				PRODUCT_NAME = pathfinder_open_in_bbedit;
 				WRAPPER_EXTENSION = plugin;
 			};
 			name = Debug;
@@ -210,13 +214,13 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = pathfinder_open_in_textmate_Prefix.pch;
+				GCC_PREFIX_HEADER = pathfinder_open_in_bbedit_Prefix.pch;
 				HEADER_SEARCH_PATHS = (
-					"~/Downloads/Path\\ Finder\\ SDK//**",
+					"~/code/xcode/Path\\ Finder\\ SDK/**",
 				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
-				PRODUCT_NAME = pathfinder_open_in_textmate;
+				PRODUCT_NAME = pathfinder_open_in_bbedit;
 				WRAPPER_EXTENSION = plugin;
 			};
 			name = Release;
@@ -229,7 +233,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PREBINDING = NO;
 				SDKROOT = macosx10.6;
 			};
@@ -250,7 +254,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "pathfinder_open_in_textmate" */ = {
+		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "pathfinder_open_in_bbedit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB913B08733D840010E9CD /* Debug */,
@@ -259,7 +263,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "pathfinder_open_in_textmate" */ = {
+		1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "pathfinder_open_in_bbedit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB913F08733D840010E9CD /* Debug */,

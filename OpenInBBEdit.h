@@ -1,6 +1,6 @@
 //
-//  OpenInTextMate.h
-//  pathfinder_open_in_textmate
+//  OpenInBBEdit.h
+//  pathfinder_open_in_bbedit
 //
 //  Created by orta therox on 06/09/2010.
 //  Copyright 2010 wgrids. All rights reserved.
@@ -16,7 +16,7 @@
 #import "NTMenuPluginProtocol.h"
 
 
-@interface OpenInTextMate : NSObject <NTMenuPluginProtocol> {
+@interface OpenInBBEdit : NSObject <NTMenuPluginProtocol> {
   id<NTPathFinderPluginHostProtocol> host;
 
 }

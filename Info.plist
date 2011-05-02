@@ -23,7 +23,7 @@
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>NSPrincipalClass</key>
-	<string>OpenInTextMate</string>
+	<string>OpenInBBEdit</string>
 	<key>NTPluginBundleInfoKey_type</key>
 	<string>MENU_PLUGIN</string>
 </dict>
