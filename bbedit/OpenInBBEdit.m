@@ -43,35 +43,28 @@
 
 - (BOOL)validateMenuItem:(NSMenuItem*)menuItem;
 {
-  return [[[self host] selection:nil browserID:nil] count] == 1;
+  return [[[self host] selection:nil browserID:nil] count] > 0;
 }
 
 - (id)processItems:(NSArray*)items parameter:(id)parameter;
 {
 	if (!items)
 		items = [self.host  selection:nil browserID:nil];
-	
-    // Look for the files selected and turn it into one nice string
+
+  // Iterate over Path Finder selection
   NSEnumerator* enumerator = [items objectEnumerator];
   NSString *path;
   id<NTFSItem> item;
-	NSMutableString* output = [NSMutableString string];
-	
-  while (item = [enumerator nextObject])
+    NSWorkspace *ws = [NSWorkspace sharedWorkspace];
+  while ((item = [enumerator nextObject]))
    {
 		path = [item path];
-		
 		if (path)
      {
-			[output appendString:path];
+         [ws openFile: path withApplication:@"BBEdit"];
+
      }
    }
-  
-    //This is a round about way of doing it, and there's the limit of
-    // only allowing one file to be worked on at once but it's good enough for
-    // the minute, and for me.
-  
-  [[NSWorkspace sharedWorkspace] openFile: output withApplication:@"BBEdit"];
     
   return nil;
 }
