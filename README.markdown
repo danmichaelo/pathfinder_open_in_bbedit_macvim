@@ -1,11 +1,14 @@
-# Open in BBEdit and MacVim for Pathfinder #
+# Open in BBEdit or MacVim for Pathfinder #
+
+Two plugins to add menu entries "Open in BBEdit" and "Open in MacVim" to [PathFinder](http://www.cocoatech.com/)'s "Commands" menu,
+with the default shortcuts Cmd-Ctrl-B and Cmd-Ctrl-M, respectively.
 
 ## Installation the easy way
 
 Get compiled binaries, unzip and move into `~/Library/Application Support/Path Finder/PlugIns`:
 
- -   [macvim plugin](https://github.com/downloads/danmichaelo/pathfinder_open_in_bbedit_macvim/pathfinder_open_in_macvim.plugin.zip)
- -   [bbedit plugin](https://github.com/downloads/danmichaelo/pathfinder_open_in_bbedit_macvim/pathfinder_open_in_bbedit.plugin.zip)
+ -   [macvim plugin](https://github.com/downloads/danmichaelo/pathfinder_open_in_bbedit_macvim/pathfinder_open_in_macvim-1.1.zip)
+ -   [bbedit plugin](https://github.com/downloads/danmichaelo/pathfinder_open_in_bbedit_macvim/pathfinder_open_in_bbedit-1.1.zip)
 
 ## Installation the hard way
 
