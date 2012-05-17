@@ -30,7 +30,7 @@
 {
   NSMenuItem* menuItem;
 	
-  menuItem = [[[NSMenuItem alloc] initWithTitle:@"Open in BBEdit" action:@selector(pluginAction:) keyEquivalent:@"b"] autorelease];
+  menuItem = [[[NSMenuItem alloc] initWithTitle:@"Open in BBEdit" action:@selector(pluginAction:) keyEquivalent:@""] autorelease];
   [menuItem setTarget:self];
 	[menuItem setKeyEquivalentModifierMask: NSControlKeyMask | NSCommandKeyMask];
   return menuItem;
