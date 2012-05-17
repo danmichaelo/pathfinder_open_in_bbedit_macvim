@@ -7,8 +7,8 @@ with the default shortcuts Cmd-Ctrl-B and Cmd-Ctrl-M, respectively. Based on [pa
 
 Get compiled binaries, unzip and move into `~/Library/Application Support/Path Finder/PlugIns`:
 
- -   [macvim plugin](https://github.com/downloads/danmichaelo/pathfinder_open_in_bbedit_macvim/pathfinder_open_in_macvim-1.1.zip)
- -   [bbedit plugin](https://github.com/downloads/danmichaelo/pathfinder_open_in_bbedit_macvim/pathfinder_open_in_bbedit-1.1.zip)
+ -   [macvim plugin](https://github.com/downloads/danmichaelo/pathfinder_open_in_bbedit_macvim/pathfinder_open_in_macvim-1.2.zip)
+ -   [bbedit plugin](https://github.com/downloads/danmichaelo/pathfinder_open_in_bbedit_macvim/pathfinder_open_in_bbedit-1.2.zip)
 
 ## Installation the hard way
 
